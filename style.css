@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to right, #0f0f0f, #3b3b3b);
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 40px;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin: 10px 0 25px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn:hover {
+    background: #e2e2e2;
+}
+
+/* NAVBAR */
+nav {
+    background: #222;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+}
+nav a:hover {
+    background: #444;
+}
+
+/* SECTIONS */
+.section {
+    background: white;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+/* SKILLS */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills-list li {
+    background: #eee;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+/* PROJECTS */
+.project {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-small {
+    background: black;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.btn-small:hover {
+    background: #444;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    margin-top: 20px;
+}
