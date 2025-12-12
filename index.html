@@ -1,110 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manjaree Agrawal | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manjaree Agrawal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #333;
+        }
+        section {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .project-card {
+            background-color: #f0f0f0;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .project-card h3 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+        .social-links a {
+            margin: 0 0.5rem;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .social-links a:hover {
+            color: #4CAF50;
+        }
+    </style>
 </head>
-
 <body>
-
-    <!-- HEADER -->
     <header>
-        <h1 class="title">Manjaree Agrawal</h1>
-        <p class="subtitle">Software Engineer | Java | Spring Boot | DevOps | Kubernetes</p>
-
-        <a href="#projects" class="btn">View My Projects</a>
+        <h1>Manjaree Agrawal</h1>
+        <p>Software + DevOps Engineer | DSA Educator | Project Creator</p>
     </header>
 
-    <!-- NAVIGATION -->
     <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+        <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
+    <section id="about">
         <h2>About Me</h2>
-        <p>
-            I am a Software + DevOps Engineer with 2.5 years of professional experience specializing in Java,
-            Spring Boot, Microservices, Docker, Kubernetes, CI/CD pipelines, and backend engineering.  
-            I am preparing for interviews at top companies like Google and Microsoft, and I am building a SaaS platform
-            for digital marketing and advertisement management.
-        </p>
+        <p>Hello! I'm Manjaree Agrawal, a Software + DevOps Engineer with 2.5 years of professional experience. I build full-stack projects, teach DSA online, and create software solutions to solve real-world problems. Check out my work below!</p>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-        <h2>Technical Skills</h2>
-        <ul class="skills-list">
-            <li>Java</li>
-            <li>Spring Boot</li>
-            <li>Microservices</li>
-            <li>MySQL</li>
-            <li>Docker</li>
-            <li>Kubernetes</li>
-            <li>GitHub Actions</li>
-            <li>React (Learning)</li>
-        </ul>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
+    <section id="projects">
         <h2>Projects</h2>
-
-        <div class="project">
-            <h3>Digital Marketing & Advertisement Platform</h3>
-            <p>
-                A full SaaS system with cart, payments, employee assignment, real-time chat, design approval workflow,
-                and analytics.
-            </p>
-            <a href="#" class="btn-small">View Code</a>
-        </div>
-
-        <div class="project">
-            <h3>Microservices E-Commerce Backend</h3>
-            <p>
-                Includes authentication, RBAC, products, ordering, and JWT security.
-            </p>
-            <a href="#" class="btn-small">View Code</a>
-        </div>
-
-        <div class="project">
-            <h3>Kubernetes Deployment Automation</h3>
-            <p>
-                Automated CI/CD using Docker, Helm, and GitHub Actions.
-            </p>
-            <a href="#" class="btn-small">View Code</a>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Marketing & Advertisement Software</h3>
+                <p>A platform for clients to request, approve, and communicate on advertisement materials with real-time chat and payment integration.</p>
+            </div>
+            <div class="project-card">
+                <h3>DSA Learning Platform</h3>
+                <p>An online teaching platform for Data Structures & Algorithms with video tutorials and practice questions.</p>
+            </div>
+            <div class="project-card">
+                <h3>Spring Boot Microservices Projects</h3>
+                <p>Microservices with Docker, Kubernetes, Kafka, Helm, and secure JWT authentication.</p>
+            </div>
+            <!-- Add more projects here -->
         </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-        <h2>Experience</h2>
-        <p><strong>Software Engineer + DevOps Engineer — 2.5 Years</strong></p>
+    <section id="contact">
+        <h2>Contact & Connect</h2>
+        <p>You can reach me via:</p>
         <ul>
-            <li>Developed microservices and REST APIs with Spring Boot</li>
-            <li>Implemented CI/CD pipelines using GitHub Actions</li>
-            <li>Deployed apps on Kubernetes using Docker & Helm</li>
-            <li>Integrated JWT authentication & role-based security</li>
+            <li>Email: <a href="mailto:manjaree03@example.com">manjaree03@example.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/manjaree03/" target="_blank">linkedin.com/in/manjaree03</a></li>
+            <li>GitHub: <a href="https://github.com/manjaree03" target="_blank">github.com/manjaree03</a></li>
+            <li>YouTube: <a href="https://www.youtube.com/@manjaree_agrawal" target="_blank">YouTube Channel</a></li>
         </ul>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/manjaree03/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/manjaree03" target="_blank">GitHub</a>
+            <a href="https://www.youtube.com/@manjaree_agrawal" target="_blank">YouTube</a>
+        </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>Email: manjaree.agrawal@gmail.com</p>
-        <p>LinkedIn: linkedin.com/in/manjaree-agrawal</p>
-    </section>
-
-    <!-- FOOTER -->
     <footer>
-        © 2025 Manjaree Agrawal
+        &copy; 2025 Manjaree Agrawal. All Rights Reserved.
     </footer>
-
 </body>
 </html>
